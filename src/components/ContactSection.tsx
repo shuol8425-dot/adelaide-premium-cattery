@@ -52,15 +52,18 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     if (!formData.message.trim()) {
       newErrors.message = 'Please include a brief message or question.';
     }
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+    setReferenceCode(code);
+setIsSubmitting(false);
+setIsSubmitted(true);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!validate()) return;
-
-    setIsSubmitting(true);
+// GA4 - track successful demo enquiries
+if (typeof window !== 'undefined' &&
+    typeof (window as any).gtag === 'function') {
+  (window as any).gtag('event', 'demo_enquiry_submit', {
+    enquiry_type: formData.enquiryType,
+    is_demo: true
+  });
+}
     // Simulate high-reliability submission
     setTimeout(() => {
       const code = `APC-${Math.floor(100000 + Math.random() * 900000)}`;
