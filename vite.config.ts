@@ -3,11 +3,11 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-return {
-  base: command === 'build' ? '/adelaide-premium-cattery/' : '/',
-  plugins: [react(), tailwindcss()],
-  resolve: {
+export default defineConfig(({command}) => {
   return {
+    base: command === 'build' ? '/adelaide-premium-cattery/' : '/',
+    plugins: [react(), tailwindcss()],
+    resolve: {
     base: command === 'build' ? '/adelaide-premium-cattery/' : '/',
     resolve: {
       alias: {
