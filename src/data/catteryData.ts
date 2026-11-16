@@ -272,3 +272,82 @@ export const TESTIMONIALS = [
     breed: 'Ragdoll Pet Parent',
   },
 ];
+
+export interface BlogArticleSection {
+  heading: string;
+  paragraphs: string[];
+  bullets?: { label: string; text: string }[];
+}
+
+export interface BlogPostData {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  category: string;
+  author: string;
+  publishedDate: string;
+  readTime: string;
+  heroImage: string;
+  secondaryImage: string;
+  intro: string;
+  sections: BlogArticleSection[];
+  ctaHeading: string;
+  ctaCopy: string;
+}
+
+export const BLOG_POST: BlogPostData = {
+  slug: 'how-to-choose-and-care-for-a-healthy-kitten-adelaide',
+  title: 'How to Choose and Care for a Healthy Kitten in Adelaide: Ragdoll vs British Shorthair',
+  metaDescription:
+    'Compare Ragdoll kittens Adelaide and British Shorthair kittens Adelaide, with practical kitten care tips from trusted cat breeders Adelaide families love.',
+  category: 'Breed Comparison & Care Journal',
+  author: 'Adelaide Premium Cattery Team',
+  publishedDate: 'November 2026',
+  readTime: '3 min read',
+  heroImage: ragdollBluepointImg,
+  secondaryImage: britishGoldenImg,
+  intro:
+    'Bringing a new kitten into your home is one of life’s greatest joys. Whether you are a first-time pet owner or a growing South Australian family, choosing the right breed makes all the difference. Among prospective owners searching for cat breeders Adelaide wide, two breeds consistently stand out for their gentle nature and beauty: Ragdolls and British Shorthairs. Understanding their distinct personalities and daily needs will help you welcome a happy, healthy companion into your household.',
+  sections: [
+    {
+      heading: 'Ragdoll vs British Shorthair: Comparing Personalities',
+      paragraphs: [
+        'If you are torn between Ragdoll kittens Adelaide families adore and British Shorthair kittens Adelaide households cherish, start by considering your daily routine. Ragdolls are famous for their affectionate, dog-like devotion. They love following their favourite humans from room to room, greeting you at the door, and going completely relaxed when cradled in your arms. They thrive in homes where someone is around for good company.',
+        'British Shorthairs, on the other hand, are calm, independent, and quietly loyal. Often described as the teddy bears of the cat world, they enjoy sitting beside you on the lounge rather than constantly sitting on your lap. Their easygoing temperament makes them wonderful companions for busy professionals and relaxed family homes alike.',
+      ],
+    },
+    {
+      heading: 'Grooming Needs for Every Coat',
+      paragraphs: [
+        'Both breeds boast stunning coats, though their maintenance differs slightly:',
+        'Starting gentle brushing and nail-trimming routines early helps kittens see grooming as relaxing bonding time.',
+      ],
+      bullets: [
+        {
+          label: 'Ragdoll coats',
+          text: 'Their silky, semi-longhair coat has minimal undercoat, meaning it tangles less than many longhaired breeds. Still, combing two to three times a week keeps their fur smooth and reduces shedding.',
+        },
+        {
+          label: 'British Shorthair coats',
+          text: 'Their dense, plush double coat feels like velvet. A gentle weekly brush removes loose fur—especially during Adelaide’s warmer spring and autumn coat changes.',
+        },
+      ],
+    },
+    {
+      heading: 'Feeding Requirements for Growing Kittens',
+      paragraphs: [
+        'Sound kitten care tips always begin with quality nutrition. Growing kittens require protein-rich diets formulated specifically for kitten development. Feed three to four small meals daily until six months of age, combining high-meat wet food for hydration with quality dry kibble. Always keep fresh, clean water in a wide ceramic or stainless-steel bowl positioned well away from the litter tray. When you adopt, continue your breeder’s existing food brand for the first week or two before making gradual transitions to prevent tummy upsets.',
+      ],
+    },
+    {
+      heading: 'How to Prepare Your Adelaide Home',
+      paragraphs: [
+        'Before pickup day, prepare a quiet “safe room” such as a spare bedroom or study. Stock it with a soft bed, a tall sisal scratching post, an unscented litter box, food and water bowls, and a few safe toys. Securing loose electrical cords, checking that houseplants are non-toxic, and ensuring window screens are sturdy will keep your curious explorer safe from day one. Remember that young kittens sleep up to eighteen hours a day, so give them calm space to settle at their own pace.',
+      ],
+    },
+  ],
+  ctaHeading: 'Start Your Kitten Journey with Adelaide Premium Cattery',
+  ctaCopy:
+    'When choosing a kitten, always ask breeders about early socialisation, veterinary check-ups, and the environment in which kittens are raised. At Adelaide Premium Cattery, we are passionate about matching loving South Australian families with confident, well-socialised Ragdoll and British Shorthair companions. Ready to take the next step? Explore our example kitten profiles to discover the temperament and coat varieties we raise, or contact Adelaide Premium Cattery today to chat about welcoming a healthy kitten into your home.',
+};
+

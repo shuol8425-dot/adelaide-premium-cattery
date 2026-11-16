@@ -5,6 +5,7 @@ import { AboutUs } from './components/AboutUs.tsx';
 import { KittenCatalog } from './components/KittenCatalog.tsx';
 import { CareGuide } from './components/CareGuide.tsx';
 import { HealthEthics } from './components/HealthEthics.tsx';
+import { BlogSection } from './components/BlogSection.tsx';
 import { FAQSection } from './components/FAQSection.tsx';
 import { ContactSection } from './components/ContactSection.tsx';
 import { Footer } from './components/Footer.tsx';
@@ -62,7 +63,14 @@ export default function App() {
           onOpenEnquiry={() => handleOpenEnquiry()}
         />
 
-        {/* 6. FAQ */}
+        {/* 6. Cattery Blog */}
+        <BlogSection
+          onExploreKittens={() => scrollToSection('kittens')}
+          onOpenCareGuide={() => scrollToSection('care-guide')}
+          onOpenEnquiry={() => handleOpenEnquiry()}
+        />
+
+        {/* 7. FAQ */}
         <FAQSection
           onOpenEnquiry={() => handleOpenEnquiry()}
         />

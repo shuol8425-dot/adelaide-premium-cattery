@@ -10,10 +10,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenEnquiry }) => 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'About Us', target: 'about' },
+    { label: 'About', target: 'about' },
     { label: 'Our Kittens', target: 'kittens' },
     { label: 'Care Guide', target: 'care-guide' },
-    { label: 'Health & Ethics', target: 'health-ethics' },
+    { label: 'Health', target: 'health-ethics' },
+    { label: 'Blog', target: 'blog' },
     { label: 'FAQ', target: 'faq' },
     { label: 'Contact', target: 'contact' },
   ];
@@ -56,7 +57,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenEnquiry }) => 
           </button>
 
           {/* Zone 2: 4-6 concise single-line text links */}
-          <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-[#5A4B41]">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-6 text-sm font-medium text-[#5A4B41]">
             {navLinks.map((link) => (
               <button
                 key={link.target}

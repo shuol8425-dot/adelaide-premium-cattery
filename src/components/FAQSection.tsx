@@ -28,7 +28,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onOpenEnquiry }) => {
   };
 
   return (
-    <section id="faq" className="py-16 sm:py-24 bg-[#FAF7F2] border-b border-[#E8DFD8]">
+    <section id="faq" className="py-16 sm:py-24 bg-[#F5EFEB] border-b border-[#E8DFD8]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
@@ -66,7 +66,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onOpenEnquiry }) => {
                 className={`px-3.5 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer ${
                   selectedCategory === cat
                     ? 'bg-[#5A4232] text-white shadow-xs'
-                    : 'bg-[#F0E6DC] text-[#6A584C] hover:bg-[#E5D7CA]'
+                    : 'bg-white text-[#6A584C] hover:bg-[#FAF7F2] border border-[#E8DFD8]'
                 }`}
               >
                 {cat}
@@ -122,7 +122,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onOpenEnquiry }) => {
         </div>
 
         {/* Still have questions CTA */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-[#F5EFEB] border border-[#E8DFD8] text-center space-y-4">
+        <div className="p-6 sm:p-8 rounded-2xl bg-[#FAF7F2] border border-[#E8DFD8] text-center space-y-4">
           <div className="w-12 h-12 rounded-full bg-[#EADDCF] flex items-center justify-center text-[#5A4232] mx-auto">
             <MessageSquare className="w-6 h-6 text-[#8C6D58]" />
           </div>
