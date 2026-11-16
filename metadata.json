@@ -1,0 +1,6 @@
+{
+  "name": "Adelaide Premium Cattery",
+  "description": "Ethical registered cat breeders in Adelaide, South Australia specialising in healthy, lovingly raised pedigree kittens with health guarantees.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
